@@ -1,7 +1,11 @@
 % Mingyu Xia (夏明宇, Westlake ID: 20251202247) Homework #i
 \documentclass[11pt, no-math]{book}
 
-\input{../preamble.dtx}
+\makeatletter
+\def\input@path{{../}}
+\makeatother
+\usepackage{preamble}
+
 \coverset{
   title   = Advanced Statistics Mechanics,
   author  = \ttfamily \textsc{Mingyu Xia},
@@ -53,6 +57,6 @@
 \makeatletter
 \sidefoot {\inteval{4 * \the \c@page - 3} -- \inteval{4 * \the \c@page}}
 \makeatother
-\includepdf [pages = -] {./reference/[0(Note)]_Lecture-ASB}
+\includepdf [pages = -] {./media/[0(Note)]_Lecture-ASB}
 
 \end{document}
