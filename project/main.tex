@@ -1,7 +1,7 @@
 \documentclass[ reprint, superscriptaddress,
                 amsmath, amssymb, aps, pre ]{revtex4-2}
-\usepackage{graphicx, float, subcaption, array, booktabs, enumitem, enumext,
-            fixdif, derivative, physics2, lmodern, hvlogos, CJKutf8}
+\usepackage{graphicx, float, subcaption, array, booktabs,
+            enumext, physics2, lmodern, CJKutf8}
 \usepackage[mono = false]{libertine}
 \usephysicsmodule{ab, ab.braket, qtext.legacy, op.legacy}
 \usepackage[final, nopatch = footnote]{microtype}
@@ -61,7 +61,7 @@ on-site repulsive term (tends to the Mott-insulation phase with the particles
 isolated distributed). Parameter $U$ can tune the phase transition:
 When $U > 9$, the system will turn into the Mott-insulation phase.
 
-\section{SSE Expansion for BHM}
+\section{Stochastic Series Expansion for BHM}
 
 \subsection{Kernel Formula}
 
@@ -352,7 +352,7 @@ control the amount of computation without affecting the core trend.
 
 \subsection{Simulation Process}
 
-\emph{Stochastic Series Expansion (SSE)} and \emph{Directed Loop Algorithm} are
+\emph{SSE} and \emph{Directed Loop Algorithm} are
 used for the simulation.
 
 The SSE method is a Quantum Monte Carlo technique that maps a $d$-dimensional
@@ -391,7 +391,7 @@ $\tau_\text{int}(n)$
 In actual calculations, the summation is truncated to $A_n(t)<10^{-4}$ to
 avoid infinite summation.
 
-\subsubsection{Statistical average}
+\subsubsection{Statistical Average}
 
 Take the arithmetic mean of $\tau_\text{int}(n)$ for $4000$ independent chains
 and plot the curve $U-\tau_\text{int}(n)$.
