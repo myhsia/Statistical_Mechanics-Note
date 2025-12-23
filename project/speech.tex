@@ -7,6 +7,7 @@
 \long\def \turnpage#1 {\par\noindent\rule{\dimeval{.5\linewidth-2.5\ccwd}}{.5pt}\hfill
   {\small \lower.25\ccwd\hbox{\fangsong 翻页(#1\%)}}\hfill
   \rule{\dimeval{.5\linewidth-2.5\ccwd}}{.5pt}\par}
+\setlength \parindent {0pt}
 
 \begin{document}
 
@@ -206,10 +207,13 @@ $\pi_4$ 为最大权重）：
 
 \turnpage{56}
 
-随 $U$ 增大，SSE 构型空间的对角权重逐渐主导，方案 C 局部最优算法的
-$\tau_{int}(n)$ 略有上升，方案 B 最小反弹算法保持比较稳定；
+然后，我们逐渐增大扫描次数的取值.
+我们会发现
 
 \turnpage{58}
+
+随 $U$ 增大，SSE 构型空间的对角权重逐渐主导，方案 C 局部最优算法的
+$\tau_{int}(n)$ 略有上升，方案 B 最小反弹算法保持比较稳定；
 
 扫描次数 $\geq 4000$ 时，三种算法的结果均趋于稳定，无明显波动.
 
