@@ -1,6 +1,6 @@
 % !TeX root = ../main.tex
 
-\section{Homework \#3 [2025-09-16]}
+\section{Homework \#3}
 
 \begin{problem}
   $N$ 个单原子分子组成的理想气体，
@@ -113,69 +113,6 @@
     \]
   \end{enumext}
 \end{solution}
-\pagebreak
-\begin{problem}
-  读 Pathria 书的 \S1.2，\S1.3，写一个阅读笔记.
-\end{problem}
-\paragraph{\S1.2 统计学与热力学之间的联系}
-\begin{enumext}
-  \item \textbf{系统描述与基本假设.}
-  \begin{enumext}
-    \item 两个系统 $A_1$ 和 $A_2$，分别处于平衡态，
-    宏观态由 $(N_1, V_1, E_1)$ 和 $(N_2, V_2, E_2)$ 描述.
-    \item 系统的微观状态数分别为 $\Omega_1(N_1, V_1, E_1)$, $\Omega_2(N_2, V_2, E_2)$.
-    \item 复合系统 $A^{(0)} = A_1 + A_2$ 的总能量守恒
-    $E^{(0)} = E_1 + E_2 = \text{Constant}$.
-  \end{enumext}
-  \item \textbf{复合系统的微观状态数.}
-  $\Omega^{(0)}(E_1, E_2) = \Omega_1(E_1) \cdot \Omega_2(E_2)$
-  \item \textbf{平衡条件与最概然状态.}
-  平衡时，$\Omega^{(0)}$ 取最大值
-  \[
-    \frac{\partial \ln \Omega_1(E_1)}{\partial E_1}
-  = \frac{\partial \ln \Omega_2(E_2)}{\partial E_2}
-  \]
-  定义 $\beta \equiv
-    \ab( \frac{\partial \ln \Omega(N, V, E)}{\partial E} )_{N, V}$，
-  则平衡条件为 $\beta_1 = \beta_2$.
-  \item \textbf{熵与温度的联系.}
-  热力学中存在关系
-  \[
-    \ab( \frac{\partial S}{\partial E} )_{N, V} = \frac{1}{T}
-  \]
-  对比统计定义 $S = k \ln \Omega$ 可得 $\beta = \frac{1}{k_BT}$，
-  $k$ 为玻尔兹曼常数
-\end{enumext}
-
-\paragraph{\S1.3 统计学与热力学的进一步联系}
-\leavevmode
-\begin{enumext}
-  \item \textbf{能量与体积交换.}
-  若系统间可交换能量与体积，则平衡条件为
-  \[
-    \beta_1 = \beta_2 \qq{and} \eta_1 = \eta_2
-  \]
-  其中 $\eta \equiv \ab( \frac{\partial \ln \Omega}{\partial V} )_{N, E}$.
-  \item \textbf{能量、体积与粒子数交换.}
-  若还可交换粒子，则平衡条件为
-  \[
-    \beta_1 = \beta_2, \quad \eta_1 = \eta_2, \quad \zeta_1 = \zeta_2
-  \]
-  其中 $\zeta \equiv \ab( \frac{\partial \ln \Omega}{\partial N} )_{V, E}$.
-  \item \textbf{与热力学量的对应.}
-  由热力学基本关系
-  \[
-    \d E = T\d S - P\d V + \mu \d N
-  \]
-  可得 $\eta = \frac{P}{k_BT}$, $\zeta = -\frac{\mu}{k_BT}$.
-  \item \textbf{统计热力学的核心公式.}
-  \begin{enumext*}[columns = 5, label = \roman*., labelsep = 0pt, widest = 3]
-    \item(2) 熵: $S(N, V, E) = k \ln \Omega(N, V, E)$.
-    \item(3) 强度量: $\frac{1}{T} = \ab( \frac{\partial S}{\partial E} )_{N,V}$,
-    $\frac{P}{T} = \ab( \frac{\partial S}{\partial V} )_{N,E}$,
-    $-\frac{\mu}{T} = \ab( \frac{\partial S}{\partial N} )_{V,E}$.
-  \end{enumext*}
-\end{enumext}
 
 \begin{problem}
   经典单原子分子理想气体，忽略气体内部自由度，用正则系综求内能，物态方程和熵.
